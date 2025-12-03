@@ -1,0 +1,10 @@
+# /flux/boot/traefik/helmrepo.yaml
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: traefik
+  namespace: traefik
+spec:
+  type: oci
+  interval: 1m0s
+  url: oci://ghcr.io/traefik/helm/traefik
